@@ -1,0 +1,94 @@
+/* Variables de colores */
+:root {
+    --color-primary: #0051A2; /* Azul oscuro - Color primario */
+    --color-secondary: #FFFFFF; /* Blanco - Color secundario */
+    --color-accent: #003B73; /* Azul intenso */
+    --color-accent-hover: #011C49; /* Azul más oscuro para hover */
+    --color-text: #1F1F1F; /* Gris oscuro para el texto */
+    --color-white: #FFFFFF;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Configuración general */
+body {
+    background-color: var(--color-primary);
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+}
+
+.container {
+    max-width: 600px;
+    background-color: var(--color-secondary);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--color-accent);
+    font-size: 2.5rem;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--color-accent);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-hover);
+}
+
+/* Inputs */
+.input-group input {
+    border-radius: 25px;
+    border: 2px solid var(--color-accent);
+    padding: 10px;
+}
+
+/* Lista de amigos */
+.list-group-item {
+    border: none;
+    background-color: rgba(0, 81, 162, 0.1); /* Azul claro */
+    font-weight: bold;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+/* Popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: var(--color-white);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.popup-content h2 {
+    color: var(--color-accent);
+}
+
+.popup-content p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
